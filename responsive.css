@@ -1,0 +1,211 @@
+@media  (max-width: 801px ) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* NAVIGATION */
+        .nav-onlargescreen {
+            display: none;
+        }
+
+        .nav-onsmallscreen {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 15vw;
+            width: 100%;
+            height: 11vh;
+            background-color:  rgb(242, 242, 242);
+            box-shadow: 0px 6px 5px 0px grey;
+        }
+
+        #menu {
+            display: none;
+        }
+
+        #menu .menu-link {
+            width: 100vw;
+            background-color:  rgb(242, 242, 242);
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 1;
+            box-shadow: 0px 10px 5px 0px grey; 
+        }
+
+        .icon {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding-right: 10%;
+            padding-top: 5%;
+        }
+
+        .icon img {
+            width: 45px;
+            cursor: pointer;
+        }
+
+        .icon img:hover {
+            transform: scale(0.95);
+        }
+
+        #menu a {
+            width: 80%;
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 1em  0em 1em 10%;
+            font-weight: bold;
+        }
+
+        #menu a:hover {
+            color: green;
+        }
+
+        #menu .menu-link a:last-child {
+            padding-bottom: 2em;
+        }
+
+        #menu .menu-link a:first-child {
+            padding-top: 3em;
+        }
+
+        .nav-onsmallscreen .bar img {
+            width: 50px;
+            cursor: pointer;
+            transition: all ease 0s;
+        }
+
+        .nav-onsmallscreen .bar img:hover {
+            transform: scale(0.95);
+        }
+
+    /* ABOUT-SECTION */
+        .about-container {
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .about-img,.about-detail {
+            width: 100%;
+        }
+
+        .about-img img {
+            width: 80%;
+        }
+
+    /* OURTEAM-SECTION */
+        #ourteam-section {
+            height: auto;
+            width: 100%;
+        }
+
+        .ourteam-head {
+            text-align: center;
+            max-width: 80%;
+        }
+
+        .team-member-card .card:first-child {
+            display: none;
+        }
+
+    /* PROJECT-SECTION */
+        .project-data {
+            display: block;
+            text-align: center;
+            max-width: 90%;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+    /* GALLERY-SECTION */
+        #gallery-section {
+            margin-top: -1em;
+            width: 100%;
+        }
+
+        .gallery-title {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        
+
+    /* BLOG-SECTION */
+        #blog-section {
+            /* height: auto; */
+            text-align: center;
+            width: 100%;
+        }
+
+        .blog-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .blog-card:first-child {
+            display: none;
+        }
+
+    /* CONTACT-SECTION */
+        #contact-section  {
+            height: auto;
+            width: 100%;
+        } 
+
+        #contact-section .contact-container {
+            display: block;
+        }
+
+        .contact-detail {
+            width: 100%;
+        }
+
+        .contact-form {
+            margin-top: -15vh;
+        }
+
+        footer {
+            margin-top: 60vh; 
+        }
+
+        .next {
+            right: 1em;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .prev {
+            left: 1em;
+            border-radius: 3px 0 0 3px;
+        }
+        
+    
+}
+
+@media (max-width:950px) {
+    #ourteam-section {
+        height: auto;
+    }
+
+    .team-member-card .card:last-child {
+        display: none;
+    }
+
+    #about-section {
+        height: auto;
+    }
+
+    .about-container {
+        display: block;
+    }
+
+    .about-img,.about-detail{
+        width: 100%;
+    }
+
+    .blog-card:last-child {
+        display: none;
+    }
+}
